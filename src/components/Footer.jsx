@@ -7,7 +7,7 @@ import Skills from './Skills';
 const Footer = () => {
   return (
     <>
-      <footer className='bg-emerald-100 p-4 flex sticky bottom-0 justify-center'>
+      <nav className='bg-emerald-100 p-4 flex sticky bottom-0 justify-center'>
         <div className='flex gap-x-4 sm:gap-x-12 md:gap-x-24 lg:gap-x-48'>
           {links.map(link => {
             const { id, href, text } = link;
@@ -18,7 +18,7 @@ const Footer = () => {
             );
           })}
         </div>
-      </footer>
+      </nav>
     </>
   );
 };
