@@ -5,7 +5,7 @@ const Navigation = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <footer className=' flex justify-center sticky bottom-0'>
+    <footer className='flex justify-center fixed bottom-0 w-full'>
       <nav className='bg-emerald-100 h-18 rounded-full   px-4  sticky bottom-0'>
         <ul className='flex relative'>
           {links.map((item, i) => (
