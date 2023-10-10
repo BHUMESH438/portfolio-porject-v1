@@ -9,10 +9,14 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
+      <div className='min-h-screen flex flex-col'>
+        <main className='flex-grow'>
+          <Hero />
+          <About />
+          <Skills />
+          <Projects />
+        </main>
+      </div>
       <Navigation />
     </>
   );

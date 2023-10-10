@@ -6,7 +6,7 @@ const Navigation = () => {
 
   return (
     <div className=' flex justify-center sticky bottom-0'>
-      <footer className='bg-emerald-100 h-18 rounded-full   px-4'>
+      <footer className='bg-emerald-100 h-18 rounded-full   px-4  sticky bottom-0'>
         <ul className='flex relative'>
           {links.map((item, i) => (
             <li key={i} className='w-20'>
