@@ -5,8 +5,8 @@ const Navigation = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <div className=' flex justify-center sticky bottom-0'>
-      <footer className='bg-emerald-100 h-18 rounded-full   px-4  sticky bottom-0'>
+    <footer className=' flex justify-center sticky bottom-0'>
+      <nav className='bg-emerald-100 h-18 rounded-full   px-4  sticky bottom-0'>
         <ul className='flex relative'>
           {links.map((item, i) => (
             <li key={i} className='w-20'>
@@ -16,8 +16,8 @@ const Navigation = () => {
             </li>
           ))}
         </ul>
-      </footer>{' '}
-    </div>
+      </nav>{' '}
+    </footer>
   );
 };
 
