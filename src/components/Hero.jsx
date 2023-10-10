@@ -13,7 +13,7 @@ const Hero = () => {
             <a href='https://github.com/BHUMESH438' rel='noreferrer' target='_blank'>
               <FaGithubSquare className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
             </a>
-            <a href='https://www.linkedin.com/in/bhumesh-c-5aba25243x`' rel='noreferrer' target='_blank'>
+            <a href='https://www.linkedin.com/in/bhumesh-c-5aba25243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' rel='noreferrer' target='_blank'>
               <FaLinkedin className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
             </a>
             <a href='mailto:bhumesh1719@gmail.com' rel='noreferrer' target='_blank'>
