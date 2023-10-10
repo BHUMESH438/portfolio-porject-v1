@@ -1,13 +1,13 @@
 const Navbar = () => {
   return (
-    <div className='bg-emerald-100 sticky top-0'>
+    <nav className='bg-emerald-100 sticky top-0'>
       <div className='mx-auto max-w-7xl  px-8 py-4 flex flex-col  sm:flex-row sm:gap-x-16 sm:items-center sm:py-8'>
         <h2 className='text-3xl font-bold'>
           Web
           <span className='text-emerald-600'>Dev</span>
         </h2>
       </div>
-    </div>
+    </nav>
   );
 };
 export default Navbar;

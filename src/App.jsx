@@ -1,5 +1,5 @@
 import About from './components/About';
-import Footer from './components/Footer';
+import Navigation from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
@@ -9,15 +9,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className='min-h-screen flex flex-col'>
-        <main className='flex-grow'>
-          <Hero />
-          <About />
-          <Skills />
-          <Projects />
-        </main>
-      </div>
-      <Footer />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Navigation />
     </>
   );
 }

@@ -1,26 +1,24 @@
+import { useState } from 'react';
 import { links } from '../data';
-import About from './About';
-import Hero from './Hero';
-import Projects from './Projects';
-import Skills from './Skills';
 
-const Footer = () => {
+const Navigation = () => {
+  const [active, setActive] = useState(0);
+
   return (
-    <>
-      <nav className='bg-emerald-100 p-4 flex sticky bottom-0 justify-center'>
-        <div className='flex gap-x-4 sm:gap-x-12 md:gap-x-24 lg:gap-x-48'>
-          {links.map(link => {
-            const { id, href, text } = link;
-            return (
-              <a key={id} href={href} className='capitalize font-bold md:text-2xl md:tracking-wider hover:text-emerald-600 duration-300'>
-                {text}
+    <div className=' flex justify-center sticky bottom-0'>
+      <footer className='bg-emerald-100 h-18 rounded-full   px-4'>
+        <ul className='flex relative'>
+          {links.map((item, i) => (
+            <li key={i} className='w-20'>
+              <a href={item.href} className='flex flex-col text-center p-5 cursor-pointer px-4' onClick={() => setActive(i)}>
+                <span className={` ${active === i ? ' duration-700 opacity-100 font-bold' : 'opacity-40'} `}>{item.text}</span>
               </a>
-            );
-          })}
-        </div>
-      </nav>
-    </>
+            </li>
+          ))}
+        </ul>
+      </footer>{' '}
+    </div>
   );
 };
 
-export default Footer;
+export default Navigation;
